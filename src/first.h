@@ -17,6 +17,14 @@
     #include <wolfssl/options.h>
 #endif
 
+#ifdef __COVERITY__
+#define _Float128 long double
+#define _Float64x long double
+#define _Float64  double
+#define _Float32x double
+#define _Float32  float
+#endif
+
 #include <sys/types.h>
 #include <stddef.h>
 
