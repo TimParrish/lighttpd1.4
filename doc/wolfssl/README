@@ -116,10 +116,3 @@ The following line in the lighttpd.conf will specify the lighttpd log file:
     server.errorlog = "./server_err.log"
 
 Prior to the log being opened, log messages will be directed to stderr.
-
-4.1 PK Callbacks
-
-If you'd like to use this with external crypto hardware for ECC then you can build
-wolfSSL with the `./configure --enable-pkcallbacks` option. The reference PK callbacks
-are in the src/mod_openssl.c file. Search for HAVE_WOLFSSL_PK_CALLBACKS to locate the reference
-functions.
